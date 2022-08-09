@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Example App by chance</title>
+  </head>
+  <body>
+    
+   <nav class="navbar bg-light shadow p-3 mb-5 bg-body rounded">
+    <div class="container">
+        <a href="#" class="nar-brand">
+            <img src="images/logo.png" alt="logo"  width="30" height="24">
+        </a>  
+        <div class="page-header" >
+            Units Convertor
+          </div>   
+    </div>
+   </nav>
+
+   <div class="container-sm">
+
+    <div class="container col">
+      <select class="form-select" aria-label="Default select example" id="selections">
+          <option value ="">Select Conversion</option>
+          <option value="0">meter - centimeter</option>
+          <option value="1">meter - millimeter</option>
+          <option value="2">meter - kilometer</option>
+          <option value="3">centimeter - meter</option>
+          <option value="4">centimeter - millimeter</option>
+          <option value="5">centimeter - kilometer</option>
+          <option value="6">millimeter - meter</option>
+          <option value="7">millimeter - centimeter</option>
+          <option value="8">millimeter - kilometer</option>
+          <option value="9">kilometer - meter</option>
+          <option value="10">kilometer - centimeter</option>
+          <option value="11">kilometer - millimeter</option>
+        </select>
+     </div>
+  
+     <br><br>
+     <div class="container px-4 text-center ">
+      <div class="row">
+          <div class="col">
+            <input type="number" class="form-control" id="leftInput" placeholder="">
+          </div>
+          <div class="col">
+            <input type="number" class="form-control" id="rightInput" placeholder="">
+          </div>
+        </div>
+    </div>
+    
+    <br>
+    
+    <div class="container">
+      <p class="lead mark">Findings...</p>
+      <ul class="list-group" id="recent-ones">
+         <!-- <li class="list-group-item">An item</li>
+          <li class="list-group-item">A second item</li>
+          <li class="list-group-item">A third item</li>
+          <li class="list-group-item">A fourth item</li>
+          <li class="list-group-item">And a fifth one</li> -->
+        </ul>
+    </div>
+
+   </div>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
