@@ -113,6 +113,9 @@ class UI{
             //showing alert
             UI.showAlert('Book added successfully','alert-success');
 
+            //clear field by calling clear field in UI
+            UI.clearFields();
+
         }
         else{
             UI.showAlert('Fill in all fields!','alert-danger')
@@ -135,6 +138,12 @@ class UI{
         setTimeout(()=>{
             div.remove();
         }, 2000);
+    }
+
+    static clearFields(){
+        document.getElementById('title').value = "";
+        document.getElementById('author').value = "";
+        document.getElementById('isbn').value = "";
     }
 }
 
